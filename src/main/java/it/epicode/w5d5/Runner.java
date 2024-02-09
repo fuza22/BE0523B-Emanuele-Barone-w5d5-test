@@ -60,7 +60,7 @@ public class Runner implements CommandLineRunner {
 
             Utente utente1 = ctx.getBean(Utente.class);
             utenteService.salvaUtente(utente1);
-        }catch (IllegalStateException e){
+        }catch (Exception e){
 
             logger.error(e.getMessage());
 

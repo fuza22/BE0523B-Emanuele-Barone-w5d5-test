@@ -17,7 +17,7 @@ public class PrenotazioneService {
     private PrenotazioneRepository prenotazioneRepository;
 
     public void salvaPrenotazione(Prenotazione prenotazione) throws Exception, IllegalStateException{
-//        verificaCampi(prenotazione);
+        verificaCampi(prenotazione);
 
         LocalDate dataPrenotazione = prenotazione.getDataPrenotazione();
         Postazione postazione = prenotazione.getPostazione();
