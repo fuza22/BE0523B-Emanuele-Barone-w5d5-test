@@ -14,7 +14,7 @@ public interface PostazioneRepository extends JpaRepository<Postazione, Integer>
 
     public Postazione findById(int id);
 
-    @Query("select p from Postazione p where p.tipo = :tipo and p.edificio.citta = :citta")
+    @Query("select p from Postazione p where p.tipo = :tipoPostazione and p.edificio.citta = :citta")
     List<Postazione> cercaPerTipoECitta(Tipo tipoPostazione, String citta);
 
 }

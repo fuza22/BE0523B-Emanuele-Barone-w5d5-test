@@ -48,6 +48,7 @@ public class Runner implements CommandLineRunner {
             edificioService.salvaEdificio(edificio1);
 
             Postazione postazione1 = ctx.getBean(Postazione.class);
+            postazione1.setTipo(Tipo.OPENSPACE);
             postazioneService.salvaPostazione(postazione1);
 
 
