@@ -29,5 +29,15 @@ public class Postazione {
     @OneToMany(mappedBy = "postazione")
     private List<Prenotazione> prenotazioni;
 
-
+    @Override
+    public String toString() {
+        return "Postazione{" +
+                "id=" + id +
+                ", descrizione='" + descrizione + '\'' +
+                ", tipo=" + tipo +
+                ", stato=" + stato +
+                ", numeroMassimoOccupanti=" + numeroMassimoOccupanti +
+                ", edificio=" + edificio +
+                '}';
+    }
 }
